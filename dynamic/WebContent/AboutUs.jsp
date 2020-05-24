@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -30,24 +32,24 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
       			<li class="nav-item">
-        			<a class="nav-link" href="Food@Home.html">Home</a>
+        			<a class="nav-link" href="Food@Home.jsp">Home</a>
       			</li>
       			<li class="nav-item dropdown">
        				 	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        				<a class="dropdown-item" href="Drinks.html">Drinks</a>
-       					<a class="dropdown-item" href="Appetizer.html">Appetizer</a>
-         				<a class="dropdown-item" href="MainCourse.html">Main Course</a>
-         				<a class="dropdown-item" href="Desert.html">Dessert</a>
-         				<a class="dropdown-item" href="Snack.html">Snack</a>
+        				<a class="dropdown-item" href="Drinks.jsp">Drinks</a>
+       					<a class="dropdown-item" href="Appetizer.jsp">Appetizer</a>
+         				<a class="dropdown-item" href="MainCourse.jsp">Main Course</a>
+         				<a class="dropdown-item" href="Dessert.jsp">Dessert</a>
+         				<a class="dropdown-item" href="Snack.jsp">Snack</a>
         			</div>
     			</li>
       	<li class="nav-item">
-     	   <a class="nav-link" href="AboutUs.html" tabindex="-1">About Us</a>
+     	   <a class="nav-link" href="AboutUs.jsp" tabindex="-1">About Us</a>
    	 	</li>
       </ul>
-      <button onclick="document.location = 'SignUp.html'" class="btn btn-outline-success px-4 py-1 mr-2" >Sign Up</button>
-      <button onclick="document.location = 'Login.html'" class="btn btn-success px-4 py-1 mr-2" >Login</button>
+      <button onclick="document.location = 'SignUp.jsp'" class="btn btn-outline-success px-4 py-1 mr-2" >Sign Up</button>
+      <button onclick="document.location = 'Login.jsp'" class="btn btn-success px-4 py-1 mr-2" >Login</button>
    	 <form class="form-inline my-2 my-lg-0 pl-3">
    	   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
    	 </form>

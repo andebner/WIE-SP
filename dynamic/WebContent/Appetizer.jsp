@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -6,14 +8,14 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Food@Home AboutUs">
+	<meta name="description" content="Food@Home Appetizer">
 	<meta name="author" content="Group BI05">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="icon" href= "MiniLogo.png">
-	<title>Food@Home - AboutUs</title>
+	<title>Food@Home - Appetizer</title>
 
 </head>
 
@@ -30,56 +32,59 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
       			<li class="nav-item">
-        			<a class="nav-link" href="Food@Home.html">Home</a>
+        			<a class="nav-link" href="Food@Home.jsp">Home</a>
       			</li>
       			<li class="nav-item dropdown">
        				 	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        				<a class="dropdown-item" href="Drinks.html">Drinks</a>
-       					<a class="dropdown-item" href="Appetizer.html">Appetizer</a>
-         				<a class="dropdown-item" href="MainCourse.html">Main Course</a>
-         				<a class="dropdown-item" href="Desert.html">Dessert</a>
-         				<a class="dropdown-item" href="Snack.html">Snack</a>
+        				<a class="dropdown-item" href="Drinks.jsp">Drinks</a>
+       					<a class="dropdown-item" href="Appetizer.jsp">Appetizer</a>
+         				<a class="dropdown-item" href="MainCourse.jsp">Main Course</a>
+         				<a class="dropdown-item" href="Dessert.jsp">Dessert</a>
+         				<a class="dropdown-item" href="Snack.jsp">Snack</a>
         			</div>
     			</li>
       	<li class="nav-item">
-     	   <a class="nav-link" href="AboutUs.html" tabindex="-1">About Us</a>
+     	   <a class="nav-link" href="AboutUs.jsp" tabindex="-1">About Us</a>
    	 	</li>
       </ul>
-      <button onclick="document.location = 'SignUp.html'" class="btn btn-outline-success px-4 py-1 mr-2" >Sign Up</button>
-      <button onclick="document.location = 'Login.html'" class="btn btn-success px-4 py-1 mr-2" >Login</button>
+      <button onclick="document.location = 'SignUp.jsp'" class="btn btn-outline-success px-4 py-1 mr-2" >Sign Up</button>
+      <button onclick="document.location = 'Login.jsp'" class="btn btn-success px-4 py-1 mr-2" >Login</button>
    	 <form class="form-inline my-2 my-lg-0 pl-3">
    	   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
    	 </form>
   			</div>
 	</nav>
 	
-	<div class="container pt-3">
-		<h3 style="color: yellowgreen">ABOUT US</h3>
-		<h5 style="color: mediumseagreen" class="pt-3">OUR IDEA</h5>
-		<p>Our idea is to create a website where you can search recipes and then get the ingredients delivered to your doorstep. 
-			To use this service, you need to login with your individual profile. 
-			Every recipe has a video tutorial to make your cooking experience fun and easy. 
-			The ingredients can be customized to fit your taste and get delivered right your home with the exact measurements so that no food is wasted.</p>
-		<h5 style="color: mediumseagreen" class="pt-3">OUR TEAM</h5>
-		<p>We are three Business Informatics Students from UNIBZ and <b><i style="color:mediumseagreen">FOOD</i><i>@</i><i style="color: orange">HOME</i></b> is our Semester Project of the Web and Internet Engineering Course.
-			Our Team consists of Gaia Masotti, Shulogna Hoque and Andrea Ebner.</p>
+
+	<div class="container">
+		<h3 style="color: yellowgreen">APPETIZER</h3>
 		
-		<div class="row container">
+		<div class="row">
 			<div class="col-4">
-				<img src="Gaia.jpeg" alt="Gaia" width="200" height="200">
-				<p class="caption">Gaia Masotti</p>
+				<div class="thumbnail">
+					<a href="#">
+						<img src="Appetizer.jpeg" alt="Salmon Crackers" style="width:100%" height="200">
+						<div class="caption">
+							<p>Salmon Crackers</p>
+						</div>
+					</a>
+				</div>
 			</div>
 			<div class="col-4">
-				<img src="Shuli.jpeg" alt="Shuli" width="200" height="200">
-				<p class="caption">Shulogna Hoque</p>
-			</div>
-			<div class="col-4">
-				<img src="Andrea.jpeg" alt="Andrea" width="200" height="200">
-				<p class="caption">Andrea Ebner</p>
+				<div class="thumbnail">
+					<a href="#">
+						<img src="GuacEgg.jpeg" alt="Guacamole Eggs" style="width:100%" height="200">
+						<div class="caption">
+							<p>Guacamole Eggs</p>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
+		
 	</div>
 
 </body>
+
 </html>
