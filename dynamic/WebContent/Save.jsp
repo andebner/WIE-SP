@@ -9,15 +9,23 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Food@Home Dessert">
+	<meta name="description" content="Food@Home Save">
 	<meta name="author" content="Group BI05">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="icon" href= "MiniLogo.png">
-	<title>Food@Home - Dessert</title>
-
+	<title>Food@Home - Save</title>
+	<style>
+		#align {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body>
@@ -49,67 +57,90 @@
      	   <a class="nav-link" href="AboutUs.jsp" tabindex="-1">About Us</a>
    	 	</li>
       </ul>
-
-     <%
-     
-     	Class.forName("org.postgresql.Driver");
+      
+    <%
+    	Class.forName("org.postgresql.Driver");
+     	
+     	String title = "";
      
      	if(session.getAttribute("uid") == null) {
-     
-     %>
-      
-      	<button onclick="document.location = 'Account.jsp'" class="btn btn-outline-success px-4 py-1 mr-2" >Sign Up</button>
-      	<button onclick="document.location = 'Login.jsp'" class="btn btn-success px-4 py-1 mr-2" >Login</button>
-   	 
-   	 <%
-   	 
+     		
+ 			title = "Sign Up";
+     		
+    %>
+     		
+     			<button onclick="document.location = 'Login.jsp'" class="btn btn-success px-4 py-1 mr-2" >Login</button>
+     			
+    <%
+     		
      	} else {
-   	 
-   	 %>
-   	 
-   	 	<button onclick="document.location = 'Account.jsp'" class = "btn btn-outline-success px-4 py-1 mr-2">Modify Account</button>
-   	 
-   	 <%
-   	 
+     		
+     		title = "Modify Account";
+     		
+     %>
+     		
+ 				<button onclick="document.location = 'Logout.jsp'" class="btn btn-danger px-4 py-1 mr-2" >Logout</button>
+ 			
+ 	<%
+     		
      	}
-   	 
-   	 %>
-
-   	 <form class="form-inline my-2 my-lg-0 pl-3">
+    
+    %>  
+      
+  	 <form action="Save.jsp" class="form-inline my-2 my-lg-0 pl-3">
    	   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
    	 </form>
   			</div>
 	</nav>
-	
 
-	<div class="container">
-		<h3 style="color: yellowgreen">DESSERT</h3>
+	<div id="align">
+	
+		<%
 		
-		<div class="row">
-			<div class="col-4">
-				<div class="thumbnail">
-					<a href="#">
-						<img src="Cupcakes.jpeg" alt="Cupcakes" style="width:100%" height="200">
-						<div class="caption">
-							<p>Strawberry Cupcakes</p>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="col-4">
-				<div class="thumbnail">
-					<a href="#">
-						<img src="Cheesecake.jpeg" alt="Cheesecake" style="width:100%" height="200">
-						<div class="caption">
-							<p>Berry Cheesecake</p>
-						</div>
-					</a>
-				</div>
-			</div>
+			User u = new User();
+		
+			u.firstname = request.getParameter("firstname");
+			u.lastname = request.getParameter("lastname");
+			u.email = request.getParameter("email");
+			u.mobile = request.getParameter("mobile");
+			u.zip = request.getParameter("zip");
+			u.street = request.getParameter("street");
+			u.housenumber = request.getParameter("housenumber");
+			u.creditcardnumber = request.getParameter("creditcardnumber");
+			u.ccexpirem = request.getParameter("ccexpirem");
+			u.ccexpirey = request.getParameter("ccexpirey");
+			u.cvv = request.getParameter("cvv");
+			u.username = request.getParameter("username");
+			u.password = request.getParameter("password");
+			
+			int id = Integer.parseInt(request.getParameter("id"));
+	
+			boolean isAdd = (id==0);
+	
+			Main m = new Main();
+			
+			String message = "";
+			
+			if (isAdd) {
+			
+				m.addUser(u);
+				message = "Your account has been successfully created!";
+		
+			} else {
+		
+				m.updateUser(id, u);
+				message = "Your account has been successfully updated!";
+		
+			}
+		
+		%>
+
+		<div>
+			<h3 style="color: yellowgreen"><%= message %></h3>
+			<button class="btn btn-outline-success" onclick="document.location = 'Food@Home.jsp'">Go Back</button>
 		</div>
-		
+
 	</div>
 
 </body>
-
 </html>

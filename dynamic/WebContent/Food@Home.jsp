@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="def.*" %>
 
 <!DOCTYPE html>
 
@@ -47,8 +48,32 @@
      	   <a class="nav-link" href="AboutUs.jsp" tabindex="-1">About Us</a>
    	 	</li>
       </ul>
-      <button onclick="document.location = 'SignUp.jsp'" class="btn btn-outline-success px-4 py-1 mr-2" >Sign Up</button>
-      <button onclick="document.location = 'Login.jsp'" class="btn btn-success px-4 py-1 mr-2" >Login</button>
+     
+     <%
+     
+     	Class.forName("org.postgresql.Driver");
+     
+     	if(session.getAttribute("uid") == null) {
+     
+     %>
+      
+      	<button onclick="document.location = 'Account.jsp'" class="btn btn-outline-success px-4 py-1 mr-2" >Sign Up</button>
+      	<button onclick="document.location = 'Login.jsp'" class="btn btn-success px-4 py-1 mr-2" >Login</button>
+   	 
+   	 <%
+   	 
+     	} else {
+   	 
+   	 %>
+   	 
+   	 	<button onclick="document.location = 'Account.jsp'" class = "btn btn-outline-success px-4 py-1 mr-2">Modify Account</button>
+   	 
+   	 <%
+   	 
+     	}
+   	 
+   	 %>
+   	 
    	 <form class="form-inline my-2 my-lg-0 pl-3">
    	   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
    	 </form>
