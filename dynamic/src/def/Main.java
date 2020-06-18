@@ -9,9 +9,9 @@ public class Main {
 
 	public Connection getCon() throws Exception {
 
-		String url = "jdbc:postgresql://localhost:5432/Food@Home";
-        String user = "BI05";
-        String password = "project";
+		String url = "jdbc:mysql://localhost:3306/food@home";
+        String user = "root";
+        String password = "";
 
         Connection con = DriverManager.getConnection(url, user, password);
        

@@ -52,7 +52,7 @@
 
      <%
      
-     	Class.forName("org.postgresql.Driver");
+     	Class.forName("com.mysql.jdbc.Driver");
      
      	if(session.getAttribute("uid") == null) {
      
