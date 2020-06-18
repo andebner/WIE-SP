@@ -9,14 +9,14 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Food@Home Snack">
+	<meta name="description" content="Food@Home Salmon Crackers">
 	<meta name="author" content="Group BI05">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="icon" href= "MiniLogo.png">
-	<title>Food@Home - Snack</title>
+	<title>Food@Home - Salmon Crackers</title>
 
 </head>
 
@@ -81,33 +81,55 @@
   			</div>
 	</nav>
 	
-
-	<div class="container">
-		<h3 style="color: yellowgreen">SNACK</h3>
-		
+	<div class="container pt-3">
+		<h3 style="color: yellowgreen">SALMON CRACKERS</h3>
 		<div class="row">
 			<div class="col-4">
-				<div class="thumbnail">
-					<a href="SweetPotato.jsp">
-						<img src="Snack.jpeg" alt="Sweet Potato Fries" style="width:100%" height="200">
-						<div class="caption">
-							<p>Sweet Potato Fries</p>
-						</div>
-					</a>
-				</div>
+				<img alt="Salmon Crackers" src="Appetizer.jpeg" style="width:100%" height="250">
 			</div>
 			<div class="col-4">
-				<div class="thumbnail">
-					<a href="NutellaBread.jsp">
-						<img src="NutellaBananaBread.jpeg" alt="Nutella Banana Bread" style="width:100%" height="200">
-						<div class="caption">
-							<p>Nutella Banana Bread</p>
-						</div>
-					</a>
-				</div>
+				<h5><b>Ingredients</b></h5>
+				<ul>
+					<li>340 g cream cheese</li>
+					<li>2 tb lemon zest</li>
+					<li>2 tb chopped parsley</li>
+					<li>4 tb chopped basil</li>
+					<li>85 g chive snippets</li>
+					<li>juice of 1 lemon</li>
+					<li>salt and pepper to taste</li>
+					<li>100 g smoked salmon</li>
+					<li>1 package of crackers</li>
+				</ul>
+			</div>
+			
+	<%
+	
+		double price = 8.5;
+	
+	%>
+			
+			<div class="col-4 pt-5">
+				<button onclick="document.location = 'Order.jsp?price=<%= price %>'" class="btn btn-outline-info px-4 py-1 mr-2" >Order Here!</button>
 			</div>
 		</div>
-		
+		<div class="row pt-2">
+			<h5 class="w-100"><b>Preparation</b></h5>
+			<ol>
+				<li>Put all ingredients for the cream in a bowl.</li>
+				<li>Mix until combined.</li>
+				<li>Put the mixture on a cracker.</li>
+				<li>Top with smoked salmon pieces.</li>
+			</ol>
+		</div>
+		<div class="row pt-2">
+			<h5><b>Video Tutorial</b></h5>
+		</div>
+		<div class="row pt-2">
+			<span class="pb-3 pl-2">If you want to see the video tutorial click here!</span>		
+		</div>
+		<div class="row pt-2">
+			<iframe width="715" height="402" src="https://www.youtube.com/embed/9ntR2XneHJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 	</div>
 
 </body>

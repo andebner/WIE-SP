@@ -88,7 +88,7 @@
 		<div class="row">
 			<div class="col-4">
 				<div class="thumbnail">
-					<a href="#">
+					<a href="Pizza.jsp">
 						<img src="Pizza.jpeg" alt="Pizza" style="width:100%" height="200">
 						<div class="caption">
 							<p>Homemade Pizza</p>
@@ -98,7 +98,7 @@
 			</div>
 			<div class="col-4">
 				<div class="thumbnail">
-					<a href="#">
+					<a href="Chicken.jsp">
 						<img src="Pollo.jpeg" alt="Chickenfilet" style="width:100%" height="200">
 						<div class="caption">
 							<p>Mapel Glazed Chicken Breast</p>

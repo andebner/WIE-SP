@@ -9,14 +9,14 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Food@Home Snack">
+	<meta name="description" content="Food@Home Pizza">
 	<meta name="author" content="Group BI05">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="icon" href= "MiniLogo.png">
-	<title>Food@Home - Snack</title>
+	<title>Food@Home - Homemade Pizza</title>
 
 </head>
 
@@ -81,33 +81,55 @@
   			</div>
 	</nav>
 	
-
-	<div class="container">
-		<h3 style="color: yellowgreen">SNACK</h3>
-		
+	<div class="container pt-3">
+		<h3 style="color: yellowgreen">Homemade Pizza</h3>
 		<div class="row">
 			<div class="col-4">
-				<div class="thumbnail">
-					<a href="SweetPotato.jsp">
-						<img src="Snack.jpeg" alt="Sweet Potato Fries" style="width:100%" height="200">
-						<div class="caption">
-							<p>Sweet Potato Fries</p>
-						</div>
-					</a>
-				</div>
+				<img alt="Pizza" src="Pizza.jpeg" style="width:100%" height="250">
 			</div>
 			<div class="col-4">
-				<div class="thumbnail">
-					<a href="NutellaBread.jsp">
-						<img src="NutellaBananaBread.jpeg" alt="Nutella Banana Bread" style="width:100%" height="200">
-						<div class="caption">
-							<p>Nutella Banana Bread</p>
-						</div>
-					</a>
-				</div>
+				<h5><b>Ingredients</b></h5>
+				<ul>
+					<li>250 g flour</li>
+					<li>5 g yeast</li>
+					<li>pinch of salt</li>
+					<li>water</li>
+					<li>3 tb olive oil</li>
+					<li>Passata</li>
+					<li>550 g Mozzarella</li>
+				</ul>
+			</div>
+			
+	<%
+	
+		double price = 8.2;
+	
+	%>
+			
+			<div class="col-4 pt-5">
+				<button onclick="document.location = 'Order.jsp?price=<%= price %>'" class="btn btn-outline-info px-4 py-1 mr-2" >Order Here!</button>
 			</div>
 		</div>
-		
+		<div class="row pt-2">
+			<h5 class="w-100"><b>Preparation</b></h5>
+			<ol>
+				<li>Mix flour, yeast, salt and water in a bowl.</li>
+				<li>Mix until it forms a dough, then add olive oil and knead well for about 5 minutes.</li>
+				<li>Let the dough rest for at least 2 hours.</li>
+				<li>Roll half of it on a flour sprinkled surface (this recipe makes two pizzas) to a circle.</li>
+				<li>Prik it with a fork, then add passata and mozzarella.</li>
+				<li>Bake for 15-18 minutes at 200°C in a preheated oven.</li>
+			</ol>
+		</div>
+		<div class="row pt-2">
+			<h5><b>Video Tutorial</b></h5>
+		</div>
+		<div class="row pt-2">
+			<span class="pb-3 pl-2">If you want to see the video tutorial click here!</span>		
+		</div>
+		<div class="row pt-2">
+			<iframe width="527" height="296" src="https://www.youtube.com/embed/5O4Yna5919c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 	</div>
 
 </body>

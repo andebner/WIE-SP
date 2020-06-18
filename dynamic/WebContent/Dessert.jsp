@@ -88,7 +88,7 @@
 		<div class="row">
 			<div class="col-4">
 				<div class="thumbnail">
-					<a href="#">
+					<a href="Cupcake.jsp">
 						<img src="Cupcakes.jpeg" alt="Cupcakes" style="width:100%" height="200">
 						<div class="caption">
 							<p>Strawberry Cupcakes</p>
@@ -98,7 +98,7 @@
 			</div>
 			<div class="col-4">
 				<div class="thumbnail">
-					<a href="#">
+					<a href="Cheesecake.jsp">
 						<img src="Cheesecake.jpeg" alt="Cheesecake" style="width:100%" height="200">
 						<div class="caption">
 							<p>Berry Cheesecake</p>

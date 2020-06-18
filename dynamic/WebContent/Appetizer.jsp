@@ -88,7 +88,7 @@
 		<div class="row">
 			<div class="col-4">
 				<div class="thumbnail">
-					<a href="#">
+					<a href="SalmonCrackers.jsp">
 						<img src="Appetizer.jpeg" alt="Salmon Crackers" style="width:100%" height="200">
 						<div class="caption">
 							<p>Salmon Crackers</p>
@@ -98,7 +98,7 @@
 			</div>
 			<div class="col-4">
 				<div class="thumbnail">
-					<a href="#">
+					<a href="GuacEggs.jsp">
 						<img src="GuacEgg.jpeg" alt="Guacamole Eggs" style="width:100%" height="200">
 						<div class="caption">
 							<p>Guacamole Eggs</p>

@@ -96,7 +96,7 @@
 			</div>
 			<div class="col-4">
 				<div class="thumbnail">
-					<a href="#">
+					<a href="StrawberrySmoothie.jsp">
 						<img src="Smoothie2.jpeg" alt="Strawberry Smoothie" style="width:100%" height="200">
 						<div class="caption">
 							<p>Strawberry Smoothie</p>

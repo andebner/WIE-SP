@@ -68,7 +68,7 @@
    			</div>
    			<div class="row">
    				<label for="password">Password</label>
-				<input type="password" id="password" name="password" class="w-100 form-control" required>
+				<input type="password" id="password" name="password" class="w-100 form-control"required>
 				<div class="invalid-feedback">Valid Password is required</div>
    			</div>
    			<div class="row pt-3">
