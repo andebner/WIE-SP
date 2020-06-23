@@ -85,9 +85,9 @@
 		<h3 style="color: yellowgreen">ABOUT US</h3>
 		<h5 style="color: mediumseagreen" class="pt-3">OUR IDEA</h5>
 		<p>Our idea is to create a website where you can search recipes and then get the ingredients delivered to your doorstep. 
-			To use this service, you need to login with your individual profile. 
+			To order, you need to login with your individual profile. 
 			Every recipe has a video tutorial to make your cooking experience fun and easy. 
-			The ingredients can be customized to fit your taste and get delivered right your home with the exact measurements so that no food is wasted.</p>
+			The ingredients get delivered right your home with the exact measurements so that no food is wasted.</p>
 		<h5 style="color: mediumseagreen" class="pt-3">OUR TEAM</h5>
 		<p>We are three Business Informatics Students from UNIBZ and <b><i style="color:mediumseagreen">FOOD</i><i>@</i><i style="color: orange">HOME</i></b> is our Semester Project of the Web and Internet Engineering Course.
 			Our Team consists of Gaia Masotti, Shulogna Hoque and Andrea Ebner.</p>

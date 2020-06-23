@@ -52,7 +52,7 @@ public class Main {
 	
 	public void addUser(User u) throws Exception {
 		
-		PreparedStatement st = getCon().prepareStatement("INSERT INTO login (\"firstname\", \"lastname\", \"email\", \"mobile\", \"zip\", \"street\", \"housenumber\", \"creditcardnumber\", \"ccexpirem\", \"ccexpirey\", \"cvv\", \"username\",  \"password\") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+		PreparedStatement st = getCon().prepareStatement("INSERT INTO login (firstname, lastname, email, mobile, zip, street, housenumber, creditcardnumber, ccexpirem, ccexpirey, cvv, username,  password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 		
 		st.setString(1, u.firstname);
 		st.setString(2, u.lastname);
